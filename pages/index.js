@@ -30,7 +30,7 @@ export default function App(props) {
             </Pressable>
             <Pressable>
               <Text style={{ color: "white", marginRight: 21 }}>
-                دیجی بیلدینگ
+               , دیجی بیلدینگ
               </Text>
             </Pressable>
 
