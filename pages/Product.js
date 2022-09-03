@@ -15,7 +15,7 @@ export function Product({ name, photosource, price }) {
 
         <Text>{name}</Text>
         <View style={styles.Text}>
-          <Text>تومان{price}</Text>
+          <Text s>تومان{price}</Text>
         </View>
       </View>
     </View>

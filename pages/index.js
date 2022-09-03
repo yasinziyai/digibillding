@@ -17,6 +17,11 @@ export default function App(props) {
     { name: "سیم سوکتی", price: "26,000", photosource: "./sucet.png" },
     { name: "سیم برق", price: "42,000", photosource: "./sim bargh.png" },
   ]);
+  let [products2, setProducts2] = useState([
+    { name: "پودر ", price: "42,000", photosource: "./pudr.png" },
+    { name: " سیم تلفن", price: "26,000", photosource: "./sim telephon.png" },
+    { name: "سیم برق", price: "42,000", photosource: "./sim bargh.png" },
+  ]);
   return (
     <ScrollView>
       <View style={styles.container}>
@@ -126,8 +131,21 @@ export default function App(props) {
               ))}
             </View>
           </ScrollView>
+          <Text style={{ color: "black", fontWeight: 600, marginTop: 20 }}>
+            محصولات جدید
+          </Text>
+          <ScrollView horizontal={true}>
+            <View style={{ flexDirection: "row", marginTop: 10 }}>
+              {products2.map((Item2) => (
+                <Product
+                  name={Item2.name}
+                  price={Item2.price}
+                  photosource={Item2.photosource}
+                />
+              ))}
+            </View>
+          </ScrollView>
         </View>
-        <Text style={{ color: "white", fontWeight: 600 }}>محصولات جدید</Text>
       </View>
     </ScrollView>
   );
